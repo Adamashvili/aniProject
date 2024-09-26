@@ -1,0 +1,75 @@
+body{
+    background-image: url("https://restaurant.stepprojects.ge/images/inner_banner.jpg");
+    width: 100%;
+    height: 50vh;
+}
+img{
+    background-color: black;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 100px;
+}
+.menulist{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+section{
+    padding-right: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    width: auto;
+    color: #ffffff;
+}
+section a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 25px 29px;
+    position: relative;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.two{
+    width: 145px;
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 13px;
+    height: 25px;
+    background: #ff0000;
+    display: inline-block;
+    line-height: 25px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    position: relative;
+}
+section :hover{
+    background-color: rgb(252, 180, 47);
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 75px;
+    font-size: 40px;
+}

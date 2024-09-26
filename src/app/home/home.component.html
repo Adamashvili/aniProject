@@ -1,0 +1,44 @@
+<div class="mtavari">
+<ul>
+  <li [ngClass]="activeNum == 0 ? 'active' : ''" (click)="showAllFoods()">All</li>
+  <li [ngClass]="activeNum == item.id ? 'active' : ''"  (click)="showByCategory(item.id)" *ngFor="let item of categories">{{item.name}}</li>
+</ul>
+
+
+<section>
+
+  <div  class="filter">
+    <h3>Filter</h3>
+    <div class="fields">
+            <label for="">spicinesss</label>
+            <input type="range" min="-1" max="4" step="1" [(ngModel)]="spiciness">
+    </div>
+    <div class="fields">
+            <label for="">nuts</label>
+            <input type="checkbox" [(ngModel)]="nuts">
+    </div>
+    <div class="fields">
+            <label for="">vegeterian  </label> 
+            <input type="checkbox" [(ngModel)]="vegeterian">
+    </div>
+    <button (click)="filter()">Apply</button>
+  </div>
+<div class="cardsarea">
+  <div *ngFor="let item of foodList" class="card" style="width: 18rem;">
+    <img [src]="item.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p>Price: {{item.price}}$</p>
+      <p>Nuts: {{item.nuts}}</p>
+      <p>Vegetarian: {{item.vegeterian}}</p>
+      <p>spiciness: {{item.spiciness}}</p>
+      <a (click)="daamatekalatashi(item)" class="btn btn-primary">ADD TO CART</a>
+    </div>
+  </div>
+</div>
+  
+</section>
+
+</div>
+<p class="end">© Step Ordering 2024, All rights reserved</p>
+
